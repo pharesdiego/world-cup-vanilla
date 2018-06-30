@@ -12,7 +12,7 @@ const render = html => {
   container.innerHTML = '<div class="container">' + html.join('') + '</div>';
   
   // set a gradient for each child
-  container.querySelectorAll('.card').forEach(child => setGradient(child))
+  container.querySelectorAll('.card').forEach(child => setGradient(child));
 }
 
 const setGradient = element => element.style.background = gradient();

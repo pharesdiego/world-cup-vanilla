@@ -1,5 +1,5 @@
 const Card = ({ name, matches }) => {
-  if(matches.length < 1) return null; // if there is not any match return null
+  if(matches.length === 0) return null; // if there is not any match return null
 
   return (
     div('card',
@@ -21,7 +21,7 @@ const Card = ({ name, matches }) => {
             p(match.team2.name, match.score2 > match.score1)
           )
         )
-      )).join('')
+      )).join('') // because .map returns an array and we need to .join every node in this array
     )
   )
 }
