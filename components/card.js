@@ -1,5 +1,11 @@
+/**
+ * @description generates a card/presentation for a given round of the world cup.
+ * @param {object} - an object from where we'll get the name and the matches in a world cup round.
+ * @returns {string} - a string containing the html structure of the card/presentation. 
+ */
 const Card = ({ name, matches }) => {
-  if(matches.length === 0) return null; // if there is not any match return null
+  
+  if(matches.length === 0) return null; // don't create a card if there is not any match in that round
 
   return (
     div('card',
@@ -24,7 +30,7 @@ const Card = ({ name, matches }) => {
       )).join('') // because .map returns an array and we need to .join every node in this array
     )
   )
-}
+};
 
 /**
  * Structure explanation:

@@ -7,6 +7,6 @@ const rgba = _ => {
         A = 0.50;
 
   return `rgba(${R}, ${G}, ${B}, ${A})`;
-}
+};
 
 export const gradient = _ => `linear-gradient(45deg, ${rgba()}, ${rgba()}), url(./overlay.png)`;

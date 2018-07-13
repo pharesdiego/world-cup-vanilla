@@ -13,6 +13,6 @@ const render = html => {
   
   // set a gradient for each child
   container.querySelectorAll('.card').forEach(child => setGradient(child));
-}
+};
 
 const setGradient = element => element.style.background = gradient();
